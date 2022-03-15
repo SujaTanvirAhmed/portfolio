@@ -1,0 +1,237 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+:root {
+    --clr-dark: #333;
+    --clr-light: #fff;
+    --clr-cyan: rgb(18, 221, 221);
+    --clr-magenta: rgb(211, 23, 117);
+
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    --fw-reg: 400;
+    --fw-bold: 800;
+}
+
+/* Generic styles */
+body {
+    font-family: var(--ff-primary);
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+.section-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 50px auto;
+}
+/* header styles */
+.header {
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    position: relative;
+}
+.intro {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro-title,
+.intro-subtitle {
+    text-align: center;
+}
+.intro-title strong {
+    color: var(--clr-magenta);
+    font-weight: var(--fw-bold);
+}
+.intro-call-to-action {
+    background: transparent;
+    border: 1px solid var(--clr-light);
+    color: var(--clr-light);
+    padding: 15px 20px;
+    margin-top: 30px;
+}
+.header-nav {
+    padding: 20px 0;
+    background: #000;
+    color: var(--clr-light);
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+}
+.nav-list {
+    display: flex;
+    margin-left: 100px;
+}
+.nav-link {
+    color: var(--clr-light);
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+.nav-link:hover {
+    color: var(--clr-magenta);
+}
+
+/* about styles */
+.features {
+    display: flex;
+}
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px;
+}
+.feature-img {
+    width: 100%;
+    height: auto;
+}
+.feature-title {
+    text-transform: capitalize;
+}
+.feature-desc {
+    text-align: center;
+}
+.skillset {
+    display: flex;
+    flex-direction: row;
+}
+.personal,
+.skills {
+    width: 100%;
+}
+.skill {
+    width: 100%;
+    background: #eee;
+    margin: 10px 0;
+    position: relative;
+}
+.skill-name,
+.skill-range,
+.skill-percent {
+    padding: 10px;
+    display: inline-block;
+}
+.skill-name {
+    width: 20%;
+    display: inline-block;
+    background: skyblue;
+}
+.skill-percent {
+    /* position: absolute;
+    right: 10px; */
+    width: 8%;
+}
+.skill-range {
+    /* width: 55.25%; */
+    /* display: inline-block; */
+    /* width: 70%; */
+    background: darkblue;
+    color: white;
+}
+.html {
+    width: 66.5%;
+}
+.css {
+    width: 63%;
+}
+.js {
+    width: 56%;
+}
+.react {
+    width: 59.5%;
+}
+.node {
+    width: 49%;
+}
+.ps {
+    width: 38.5%;
+}
+/* projects-group styles */
+.projects-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+/* .projects-item {
+    
+} */
+.projects-link {
+    text-transform: uppercase;
+    padding: 5px 30px;
+}
+.projects-link.active {
+    background: var(--clr-magenta);
+    color: var(--clr-light);
+}
+.projects-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* blog style */
+.blog-group {
+    display: flex;
+    gap: 30px;
+}
+
+/* contact style */
+.contact {
+    background: var(--clr-dark);
+    padding: 100px 0;
+}
+.section-title-contact {
+    color: var(--clr-light);
+}
+.section-subtitle-contact {
+    color: var(--clr-cyan);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact-form {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.contact-input {
+    background: #000;
+    /* outline: 1px solid var(--clr-magenta); */
+    padding: 8px 12px;
+    border: 1px solid gray;
+}
+.contact-form textarea {
+    margin-bottom: 60px;
+}
+.contact-submit {
+    border: 1px solid var(--clr-light);
+    padding: 15px 25px;
+    background: #000;
+    color: var(--clr-light);
+    width: 150px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
